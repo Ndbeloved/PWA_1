@@ -1,0 +1,7 @@
+nav.navigation-bar{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    background: linear-gradient(0deg, var(--bg-500), var(--bg-400));
+}

@@ -1,0 +1,12 @@
+:root{
+    --bg-400: #353F48;
+    --bg-500: #1B252F;
+    --pink-400: #F9A697;
+    --pink-500: #F95773;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}

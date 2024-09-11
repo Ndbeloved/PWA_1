@@ -3,6 +3,7 @@ import "../Styles/Home.css"
 import Modal from "../../Components/Modal/Modal"
 import { useEffect, useState } from "react"
 import Navigation from "../../Components/Navigation/Navigation"
+import BottomNavigation from "../../Components/Modal/BottomNavigation/BottomNavigation"
 
 const Home = () => {
     const location = useLocation()
@@ -30,8 +31,9 @@ const Home = () => {
     }, [location.pathname])
 
     return (
+        <>
+        <Navigation />
         <section className="home-wrapper">
-            <Navigation />
             <ul>
                 <li onClick={()=> handleItemClick(1)}>Item 1</li>
                 <li onClick={()=> handleItemClick(2)}>Item 2</li>
@@ -47,6 +49,8 @@ const Home = () => {
                 />
             )}
         </section>
+        <BottomNavigation />
+        </>
     )
 }
 

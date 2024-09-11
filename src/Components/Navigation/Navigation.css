@@ -4,4 +4,6 @@ nav.navigation-bar{
     flex-direction: column;
     gap: 0.5rem;
     background: linear-gradient(0deg, var(--bg-500), var(--bg-400));
+    padding: 0.5rem;
+    /* box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.3); */
 }

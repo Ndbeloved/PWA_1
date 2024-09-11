@@ -1,0 +1,11 @@
+.bottom-navigation{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.2rem 1rem;
+    background: var(--bg-400);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

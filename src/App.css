@@ -5,8 +5,25 @@
     --pink-500: #F95773;
 }
 
+@font-face {
+    font-family: "Poppins";
+    src: url("assets/Poppins-regular.ttf");
+}
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    background: var(--bg-500);
+    width: 100%;
+    font-family: "Poppins";
+}
+
+body div#root{
+    height: 100%;
+    /* color: #40e0d0; */
 }

@@ -4,7 +4,8 @@
     left: 0;
     width: 100%;
     padding: 0.2rem 1rem;
-    background: var(--bg-400);
+    background: var(--bg-500);
+    border-top: 1px solid rgb(156, 156, 156);
     display: flex;
     flex-direction: row;
     justify-content: space-between;

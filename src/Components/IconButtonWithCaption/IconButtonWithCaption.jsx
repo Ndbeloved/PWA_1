@@ -32,7 +32,7 @@ const IconButtonWithCaption = ({ isActive, label, Icon, onClick }) => {
       >
         <Icon
           sx={{
-            fontSize: 25,
+            fontSize: 30,
             fill: isActive ? '#000' : '#7f6664', // Icon color
           }}
         />

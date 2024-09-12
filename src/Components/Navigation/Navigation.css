@@ -7,3 +7,42 @@ nav.navigation-bar{
     padding: 0.5rem;
     /* box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.3); */
 }
+
+nav.navigation-bar .row-1{
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+
+nav.navigation-bar .row-1 img{
+    height: 35px;
+    width: 35px;
+}
+
+nav.navigation-bar .row-2{
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+
+nav.navigation-bar .row-2 .search-bar{
+    position: relative;
+    background: var(--red-300);
+    width: 100%;
+    padding: 0.7rem 0.7rem;
+    display: flex;
+    flex-direction: row;
+    border-radius: 8px;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+nav.navigation-bar .row-2 .search-bar svg{
+    color: var(--text-700);
+    font-size: 16px;
+}
+
+nav.navigation-bar .row-2 .search-bar p{
+    color: var(--text-700);
+    font-size: 14px;
+}

@@ -39,17 +39,20 @@ const Home = () => {
         {
             images: [sampleImage1, sampleImage2, sampleImage3],
             name: "Dominion City Lodge",
-            price: "120,000"
+            price: "120,000",
+            location: "Eziobodo Federal University of Technology Owerri, Imo"
         },
         {
             images: [sampleImage2, sampleImage1, sampleImage3],
             name: "ND's Lodge",
-            price: "200,000"
+            price: "200,000",
+            location: "Umuchima Federal University of Technology Owerri, Imo"
         },
         {
             images: [sampleImage3, sampleImage1, sampleImage2],
             name: "2 Bedroom Duplex",
-            price: "80,000,000"
+            price: "80,000,000",
+            location: "363 7th Avenue Egbeada Owerri, Imo"
         }
     ]
 

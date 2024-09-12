@@ -1,7 +1,7 @@
 .listing-card{
     position: relative;
     width: 100%;
-    margin-top: 0.5rem;
+    margin-top: 1.5rem;
 }
 
 .listing-card .slick-list{
@@ -14,7 +14,7 @@
 .listing-card .image-div{
     position: relative;
     width: 100%;
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 1 / 1;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -31,6 +31,10 @@
 
 .listing-card .slick-dots{
     bottom: 20px;
+}
+
+.listing-card .slick-dots li{
+    margin: 0 1px;
 }
 
 .listing-card .slick-dots li button::before{
@@ -60,4 +64,23 @@
 .listing-card p#price{
     font-size: 14px;
     color: var(--text-700);
+}
+
+.listing-card p#location{
+    font-size: 14px;
+    color: var(--text-700);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.2rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    opacity: .5;
+}
+
+.listing-card p#location svg{
+    opacity: .7;
+    flex-shrink: 0;
 }

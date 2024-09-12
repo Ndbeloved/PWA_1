@@ -3,6 +3,7 @@ import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import Favourite from "../Favourite/Favourite"
+import { IoLocationSharp } from "react-icons/io5"
 
 const ListingCard = ({data}) => {
     
@@ -26,6 +27,7 @@ const ListingCard = ({data}) => {
             </Slider>
             <h3 id="name">{data.name}</h3>
             <p id="price">&#8358;{data.price}</p>
+            <p id="location"><IoLocationSharp /> {data.location} </p>
         </div>
     )
 }

@@ -2,7 +2,7 @@ nav.navigation-bar{
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 1rem;
     background: var(--bg-500);
     padding: 0.5rem;
     /* box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.3); */
@@ -21,11 +21,20 @@ nav.navigation-bar .row-1 img{
 
 nav.navigation-bar .row-2{
     position: relative;
-    display: grid;
-    place-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    overflow-x: scroll;
+    width: 100%;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
 }
 
-nav.navigation-bar .row-2 .search-bar{
+nav.navigation-bar .row-2::-webkit-scrollbar{
+    display: none;
+}
+
+nav.navigation-bar .row-1 .search-bar{
     position: relative;
     background: var(--red-300);
     width: 100%;
@@ -37,12 +46,33 @@ nav.navigation-bar .row-2 .search-bar{
     gap: 0.4rem;
 }
 
-nav.navigation-bar .row-2 .search-bar svg{
+nav.navigation-bar .row-1 .search-bar svg{
     color: var(--text-700);
     font-size: 16px;
 }
 
-nav.navigation-bar .row-2 .search-bar p{
+nav.navigation-bar .row-1 .search-bar p{
     color: var(--text-700);
     font-size: 14px;
+}
+
+nav.navigation-bar .row-2 .item{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.1rem;
+    background: var(--red-300);
+    padding: 0.3rem 0.5rem;
+    min-width: fit-content;
+    border-radius: 8px;
+    font-size: 14px;
+    color: var(--text-900);
+    scroll-snap-align: center;
+}
+
+nav.navigation-bar .row-2 .item svg{
+    font-size: 14px;
+    color: var(--text-900);
 }

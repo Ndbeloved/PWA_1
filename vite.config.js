@@ -9,10 +9,10 @@ export default defineConfig({
     VitePWA({
       registerType: 'autoUpdate',
       manifest: {
-        name: "TrendyMovies",
-        short_name: "TrendyMovies",
-        description: "Find trending movies here",
-        theme_color: "#353F48",
+        name: "",
+        short_name: "Ubanite",
+        description: "Find a home today",
+        theme_color: "#ffffff",
         icons: [
           {
             src: '/logo-128x128.png',
@@ -25,11 +25,13 @@ export default defineConfig({
             type: 'image/png'
           },
           {
-            src: '/logo-512x512.png',
+            src: '/logo-splash-512x512.png',
             sizes: '512x512',
             type: 'image/png'
           },
-        ]
+        ],
+        display: "standalone",
+        background_color: "#ffffff"
       }
     })
   ],

@@ -15,11 +15,6 @@ export default defineConfig({
         theme_color: "#ffffff",
         icons: [
           {
-            src: '/logo-128x128.png',
-            sizes: '128x128',
-            type: 'image/png'
-          },
-          {
             src: '/logo-splash-192x192.png',
             sizes: '192x192',
             type: 'image/png'

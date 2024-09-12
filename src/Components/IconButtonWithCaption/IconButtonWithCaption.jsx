@@ -32,8 +32,8 @@ const IconButtonWithCaption = ({ isActive, label, Icon, onClick }) => {
       >
         <Icon
           sx={{
-            fontSize: 35,
-            fill: isActive ? 'url(#gradient)' : 'grey', // Icon color
+            fontSize: 25,
+            fill: isActive ? '#000' : '#7f6664', // Icon color
           }}
         />
         <svg width="0" height="0">
@@ -47,7 +47,7 @@ const IconButtonWithCaption = ({ isActive, label, Icon, onClick }) => {
         style={{
           fontSize: 10,
           marginTop: '0px',
-          color: "#fff",
+          color: isActive ? "#000000" : "#7f6664",
         }}
       >
         {label}

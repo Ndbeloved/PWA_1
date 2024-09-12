@@ -1,10 +1,14 @@
 nav.navigation-bar{
-    position: relative;
+    position: fixed;
     display: flex;
     flex-direction: column;
     gap: 1rem;
     background: var(--bg-500);
     padding: 0.5rem;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
     /* box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.3); */
 }
 

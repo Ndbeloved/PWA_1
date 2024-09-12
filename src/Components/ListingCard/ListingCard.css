@@ -1,0 +1,63 @@
+.listing-card{
+    position: relative;
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+.listing-card .slick-list{
+    position: relative;
+    /* border-radius: 10px;
+    width: 100%;
+    aspect-ratio: 4 / 3; */
+}
+
+.listing-card .image-div{
+    position: relative;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.listing-card .image-div img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.listing-card .slick-arrow{
+    display: none !important;
+}
+
+.listing-card .slick-dots{
+    bottom: 20px;
+}
+
+.listing-card .slick-dots li button::before{
+    font-size: 7px;
+    color: #fff;
+    opacity: 0.75;
+}
+
+.listing-card .slick-dots li.slick-active button::before{
+    font-size: 10px;
+    color: #fff;
+    opacity: 1;
+}
+
+.listing-card .favourite-icon{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 5;
+}
+
+.listing-card h3#name{
+    font-size: 16px;
+    color: var(--text-900);
+}
+
+.listing-card p#price{
+    font-size: 14px;
+    color: var(--text-700);
+}

@@ -9,7 +9,7 @@ export default defineConfig({
     VitePWA({
       registerType: 'autoUpdate',
       manifest: {
-        name: "",
+        name: "Ubanite",
         short_name: "Ubanite",
         description: "Find a home today",
         theme_color: "#ffffff",
@@ -20,7 +20,7 @@ export default defineConfig({
             type: 'image/png'
           },
           {
-            src: '/logo-192x192.png',
+            src: '/logo-splash-192x192.png',
             sizes: '192x192',
             type: 'image/png'
           },
@@ -31,7 +31,13 @@ export default defineConfig({
           },
         ],
         display: "standalone",
-        background_color: "#ffffff"
+        background_color: "#ffffff",
+        id: "Ubanite",
+        categories: [
+          "lifestyle",
+          "navigation",
+          "travel"
+        ]
       }
     })
   ],

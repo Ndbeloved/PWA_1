@@ -20,11 +20,11 @@ const BottomNavigation = () => {
 
     return (
         <footer className='bottom-navigation'>
-            <IconButtonWithCaption isActive={activeEl === 0} label="For you" Icon={activeEl === 0 ? HomeIconActive :HomeIcon} onClick={()=>{setActiveEl(0)}} />
+            <IconButtonWithCaption isActive={activeEl === 0} label="For you" Icon={HomeIcon} onClick={()=>{setActiveEl(0)}} />
             <IconButtonWithCaption isActive={activeEl === 3} label="Explore" Icon={SearchOutlined} onClick={()=>{setActiveEl(3)}} />
-            <IconButtonWithCaption isActive={activeEl === 4} label="Alerts" Icon={activeEl === 4 ? NotificationsOutlined : NotificationsNoneOutlined} onClick={()=>{setActiveEl(4)}} />
-            <IconButtonWithCaption isActive={activeEl === 1} label="Saved" Icon={activeEl === 1 ? BookmarkIconActive : BookmarkIcon} onClick={()=>{setActiveEl(1)}}/>
-            <IconButtonWithCaption isActive={activeEl === 2} label="Profile" Icon={activeEl === 2 ? UserIconActive : UserIcon} onClick={()=>{setActiveEl(2)}} />
+            <IconButtonWithCaption isActive={activeEl === 4} label="Alerts" Icon={NotificationsNoneOutlined} onClick={()=>{setActiveEl(4)}} />
+            <IconButtonWithCaption isActive={activeEl === 1} label="Saved" Icon={BookmarkIcon} onClick={()=>{setActiveEl(1)}}/>
+            <IconButtonWithCaption isActive={activeEl === 2} label="Profile" Icon={UserIcon} onClick={()=>{setActiveEl(2)}} />
         </footer>
     )
 }
